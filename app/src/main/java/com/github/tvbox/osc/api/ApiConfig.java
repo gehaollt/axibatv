@@ -308,9 +308,9 @@ public class ApiConfig {
             th.printStackTrace();
         }
         // 广告地址
-        for (JsonElement host : infoJson.getAsJsonArray("ads")) {
-            AdBlocker.addAdHost(host.getAsString());
-        }
+        // for (JsonElement host : infoJson.getAsJsonArray("ads")) {
+        //     AdBlocker.addAdHost(host.getAsString());
+        // }
         // IJK解码配置
         boolean foundOldSelect = false;
         String ijkCodec = Hawk.get(HawkConfig.IJK_CODEC, "");
